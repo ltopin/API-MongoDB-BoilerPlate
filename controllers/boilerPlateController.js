@@ -3,6 +3,7 @@ const boilerPlateServices = require("../services/boilerPlateSercvices");
 module.exports = boilerPlateController = {
   createBoilerPlate: (req, res) => {
     let { name, age, email } = req.body;
+    console.log("OLÁ MUNDO !")
 
     boilerPlateServices
       .createBoylerPLate(name, email, age)
