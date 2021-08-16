@@ -4,6 +4,8 @@ module.exports = boilerPlateController = {
   createBoilerPlate: (req, res) => {
     let { name, age, email } = req.body;
 
+    console.log("blablabla")
+
     boilerPlateServices
       .createBoylerPLate(name, email, age)
       .then((boiler) => {
